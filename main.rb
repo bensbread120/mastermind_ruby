@@ -18,11 +18,14 @@ class Game
     puts 'would the player like to be choosing the code or breaking the code? choosing/breaking'
     get_input(gets)
     puts 'would you like to play again y/n'
-    play_again = gets
-    if play_again.nil?
+    play_again(gets)
+  end
+
+  def play_again(input)
+    if input.nil?
       false
     else
-      (play_again.chomp.downcase == 'y')
+      input.chomp.downcase == 'y'
     end
   end
 
@@ -55,5 +58,4 @@ class Game
 end
 
 new_game = Game.new
-
 new_game.looping_game

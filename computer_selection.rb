@@ -62,7 +62,3 @@ class ComputerSelection
     p @secret_code
   end
 end
-
-# comp = ComputerSelection.new
-
-# comp.loop_turns
