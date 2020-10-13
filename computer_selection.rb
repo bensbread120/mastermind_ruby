@@ -19,6 +19,8 @@ class ComputerSelection
       check_input(get_input(gets)) ? next : break
     end
   end
+  
+  private
 
   def compare_code_to_input(guess)
     return_array = []
@@ -29,7 +31,7 @@ class ComputerSelection
     return_array
   end
 
-  private
+  
 
   def check_input(input)
     if compare_code_to_input(input) == WIN_ARRAY
